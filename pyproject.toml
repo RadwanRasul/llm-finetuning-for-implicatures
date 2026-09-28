@@ -1,0 +1,33 @@
+[project]
+name = "llm-finetuning-for-implicatures"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Radwan Rasul",email = "rasul.radwan@gmail.com"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "datasets (>=5.0.1,<6.0.0)",
+    "scikit-learn (>=1.5,<2.0)",
+    "torch (>=2.4,<3.0)",
+    "transformers (>=4.45,<5.0)",
+    "peft (>=0.13,<1.0)",
+    "bitsandbytes (>=0.43,<1.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.3.0,<8.0.0)",
+    "pytest (>=9.1.1,<10.0.0)"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.poetry]
+package-mode = false

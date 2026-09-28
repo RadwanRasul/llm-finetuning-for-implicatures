@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+
+# Large experiment archives
+results/*.zip
+
+plot-*.png
+*:Zone.Identifier
