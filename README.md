@@ -144,7 +144,7 @@ The data included in this repository are derived from the **PUB (Pragmatics Unde
 
 > Settaluri Sravanthi, Meet Doshi, Pavan Tankala, Rudra Murthy, Raj Dabre, and Pushpak Bhattacharyya. 2024. *PUB: A Pragmatics Understanding Benchmark for Assessing LLMs' Pragmatics Capabilities*. Findings of the Association for Computational Linguistics: ACL 2024, pages 12075–12097.
 
-Original dataset: https://huggingface.co/datasets/cfilt/PUB
+PUB dataset: https://huggingface.co/datasets/cfilt/PUB
 
 Paper: https://aclanthology.org/2024.findings-acl.719/
 
