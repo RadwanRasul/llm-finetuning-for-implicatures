@@ -1,4 +1,4 @@
-"""Canonical instruction formatting for fine-tuning and evaluation."""
+"""Instruction formatting for fine-tuning and evaluation."""
 
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ Condition = Literal["no_hint", "hint"]
 
 @dataclass(frozen=True)
 class RenderedExample:
-    """A traceable canonical instruction/target pair."""
+    """A traceable instruction/target pair."""
 
     question_id: str
     situation: str
@@ -27,7 +27,7 @@ class RenderedExample:
 
 
 def render_instruction(row: Mapping[str, str], *, include_implied_meaning: bool = False) -> str:
-    """Render one source row using the canonical No-Hint or Hint template."""
+    """Render one source row using the No-Hint or Hint template."""
 
     if row["correct_answer"] not in LABELS:
         raise ValueError(f"Unsupported answer label: {row['correct_answer']!r}")

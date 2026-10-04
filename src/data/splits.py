@@ -46,7 +46,7 @@ class FoldSplit:
 
 
 def load_annotated_rows(source_path: str | Path) -> list[dict[str, str]]:
-    """Load the authoritative semicolon-delimited annotated dataset."""
+    """Load the semicolon-separated annotated dataset."""
 
     with Path(source_path).open(newline="", encoding="utf-8-sig") as source_file:
         reader = csv.DictReader(source_file, delimiter=";")
